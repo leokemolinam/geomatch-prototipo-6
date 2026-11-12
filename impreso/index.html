@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#020406" />
+    <meta
+      name="description"
+      content="Póster GEOMATCH Prototipo 6, en formato vertical de 100 × 200 cm."
+    />
+    <link rel="icon" type="image/png" href="../geomatch_logo_negativo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="poster-v6.css" />
+    <title>GEOMATCH · Póster 100 × 200 cm · Prototipo 6</title>
+  </head>
+  <body>
+    <nav class="toolbar no-print" aria-label="Controles de impresión">
+      <a class="button button-ghost" href="../" aria-label="Volver al selector">← Volver</a>
+      <div class="print-spec">
+        <strong>Prototipo 6 · 100 × 200 cm</strong>
+        <span>Imprime al 100%, sin márgenes y con gráficos de fondo.</span>
+      </div>
+      <button class="button button-primary" id="print-button" type="button">Imprimir / guardar PDF</button>
+    </nav>
+
+    <main class="preview-stage">
+      <article class="poster" aria-label="Póster GEOMATCH para coloquio">
+        <div class="map-bg" aria-hidden="true"></div>
+        <div class="poster-inner">
+          <header class="brand-row">
+            <img class="brand-logo" src="../geomatch_logo_negativo.png" alt="GEOMATCH" />
+            <div class="eyebrows" aria-label="Estado del proyecto">
+              <span class="eyebrow eyebrow-solid">Nuevo</span>
+              <span class="eyebrow">Hecho en Bogotá</span>
+              <span class="eyebrow">Validado con usuarios</span>
+            </div>
+          </header>
+
+          <section class="hero">
+            <p class="overline">Inteligencia territorial · Coloquio de Innovación 2026</p>
+            <div class="hero-heading">
+              <h1>
+                <span>Decide dónde</span>
+                <span>crecer.</span>
+                <span class="gradient-text">Con evidencia.</span>
+              </h1>
+              <img class="mockup" src="../mockup_real.jpg" alt="GEOMATCH en un computador portátil y un celular" />
+            </div>
+            <p class="hero-copy">
+              Compara de <strong>2 a 5 ubicaciones</strong> y descubre cuál validar primero, con criterios visibles,
+              alertas normativas y evidencia trazable.
+            </p>
+          </section>
+
+          <section class="evidence-grid" aria-label="El problema y la solución">
+            <div class="evidence-card">
+              <p class="section-label">01 · El problema</p>
+              <h2>Elegir ubicación hoy es un rompecabezas.</h2>
+              <p>Mapas, portales, llamadas, visitas y consultas normativas dejan la evidencia dispersa.</p>
+            </div>
+            <div class="evidence-card accent-card">
+              <p class="section-label">02 · La solución</p>
+              <h2>Opciones comparables. Evidencia visible.</h2>
+              <p>Un ranking explicable con fuentes, alertas y nivel de confianza.</p>
+            </div>
+          </section>
+
+          <section class="market" aria-labelledby="market-title">
+            <div class="market-header">
+              <h2 id="market-title" class="section-label">Mercado estimado en Bogotá</h2>
+              <p>Trabajo de campo · <strong>10 entrevistas</strong></p>
+            </div>
+            <dl class="metrics">
+              <div class="metric">
+                <dt>Mercado total · TAM</dt>
+                <dd><strong>26.487</strong><span>empresas</span></dd>
+              </div>
+              <div class="metric">
+                <dt>Segmento atendible · SAM</dt>
+                <dd><strong>530</strong><span>empresas</span></dd>
+              </div>
+              <div class="metric">
+                <dt>Meta del año 1 · SOM</dt>
+                <dd><strong>4</strong><span>casos</span></dd>
+              </div>
+            </dl>
+          </section>
+
+          <div class="process-row">
+            <section class="flow" aria-labelledby="flow-title">
+              <h2 class="section-label" id="flow-title">Cómo funciona</h2>
+              <ol>
+                <li><b>01</b><span>Comparar</span></li>
+                <li><b>02</b><span>Explicar</span></li>
+                <li><b>03</b><span>Validar</span></li>
+                <li class="active"><b>04</b><span>Decidir</span></li>
+              </ol>
+              <p class="flow-caption">Avanza, valida o descarta cada alternativa con razones trazables.</p>
+            </section>
+            <figure class="testimonial" aria-labelledby="testimonial-credit">
+              <span class="testimonial-mark" aria-hidden="true">“</span>
+              <blockquote>
+                <p>“No me evitaría ir hasta allá, pero sí me haría reducir mis posibilidades.”</p>
+              </blockquote>
+              <figcaption class="section-label" id="testimonial-credit">Participante P3 · Validación del MVP</figcaption>
+            </figure>
+          </div>
+
+          <section class="comparison" aria-labelledby="comparison-title">
+            <p class="section-label">Diferenciación</p>
+            <h2 id="comparison-title">No es otro mapa. Es una decisión explicada.</h2>
+            <p class="comparison-intro">Conectamos el ranking con fuentes, alertas normativas y nivel de confianza para decisiones puntuales en Bogotá.</p>
+            <table aria-labelledby="comparison-title" aria-describedby="comparison-note">
+              <colgroup>
+                <col class="comparison-criterion" />
+                <col span="4" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">Criterio</th>
+                  <th scope="col">GEOMATCH V1</th>
+                  <th scope="col">ArcGIS Business Analyst</th>
+                  <th scope="col">Consultoría local</th>
+                  <th scope="col">Google Maps + visitas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Ranking comparativo</th>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                  <td><span class="score-label">3 de 5</span><span class="score" aria-hidden="true"><span>●●●</span>●●</span></td>
+                  <td><span class="score-label">3 de 5</span><span class="score" aria-hidden="true"><span>●●●</span>●●</span></td>
+                  <td><span class="score-label">2 de 5</span><span class="score" aria-hidden="true"><span>●●</span>●●●</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Trazabilidad de evidencia</th>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                  <td><span class="score-label">4 de 5</span><span class="score" aria-hidden="true"><span>●●●●</span>●</span></td>
+                  <td><span class="score-label">3 de 5</span><span class="score" aria-hidden="true"><span>●●●</span>●●</span></td>
+                  <td><span class="score-label">1 de 5</span><span class="score" aria-hidden="true"><span>●</span>●●●●</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Normativa local</th>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                  <td><span class="score-label">1 de 5</span><span class="score" aria-hidden="true"><span>●</span>●●●●</span></td>
+                  <td><span class="score-label">3 de 5</span><span class="score" aria-hidden="true"><span>●●●</span>●●</span></td>
+                  <td><span class="score-label">1 de 5</span><span class="score" aria-hidden="true"><span>●</span>●●●●</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Explicabilidad</th>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                  <td><span class="score-label">3 de 5</span><span class="score" aria-hidden="true"><span>●●●</span>●●</span></td>
+                  <td><span class="score-label">3 de 5</span><span class="score" aria-hidden="true"><span>●●●</span>●●</span></td>
+                  <td><span class="score-label">1 de 5</span><span class="score" aria-hidden="true"><span>●</span>●●●●</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Profundidad de análisis</th>
+                  <td><span class="score-label">3 de 5</span><span class="score" aria-hidden="true"><span>●●●</span>●●</span></td>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                  <td><span class="score-label">2 de 5</span><span class="score" aria-hidden="true"><span>●●</span>●●●</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Facilidad de uso</th>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                  <td><span class="score-label">2 de 5</span><span class="score" aria-hidden="true"><span>●●</span>●●●</span></td>
+                  <td><span class="score-label">3 de 5</span><span class="score" aria-hidden="true"><span>●●●</span>●●</span></td>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Acceso por costo</th>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                  <td><span class="score-label">1 de 5</span><span class="score" aria-hidden="true"><span>●</span>●●●●</span></td>
+                  <td><span class="score-label">3 de 5</span><span class="score" aria-hidden="true"><span>●●●</span>●●</span></td>
+                  <td><span class="score-label">5 de 5</span><span class="score" aria-hidden="true"><span>●●●●●</span></span></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="comparison-note" id="comparison-note">Valoraciones estratégicas estimadas por el equipo GEOMATCH, en escala de 0 a 5.</p>
+          </section>
+
+          <section class="value-card" aria-labelledby="criteria-title">
+            <h2 class="section-label" id="criteria-title">03 · Criterios de comparación</h2>
+            <ul>
+              <li><b>Demanda</b><span>afinidad y potencial</span></li>
+              <li><b>Competencia</b><span>presión territorial</span></li>
+              <li><b>Accesibilidad</b><span>conectividad y cercanía</span></li>
+              <li><b>Norma</b><span>alertas para validar</span></li>
+              <li><b>Confianza</b><span>fuente, fecha y cobertura</span></li>
+            </ul>
+          </section>
+
+          <section class="pilot">
+            <div class="pilot-copy">
+              <p class="section-label dark-label">Próximo experimento</p>
+              <h2>Piloto con una decisión activa</h2>
+              <p>Comparamos ubicaciones reales y medimos tiempo ahorrado, riesgos detectados y cambios en el orden de las alternativas.</p>
+              <div class="goals" aria-label="Metas del piloto">
+                <span><b>≥85%</b> precisión</span>
+                <span><b>100%</b> trazabilidad</span>
+                <span><b>≤1 día</b> entrega</span>
+              </div>
+            </div>
+            <figure class="qr-block">
+              <img src="../qr_demo.png" alt="Código QR de la demo de GEOMATCH" />
+              <figcaption><strong>Prueba la demo</strong><span>Escanea con tu celular</span></figcaption>
+            </figure>
+          </section>
+
+          <footer class="poster-footer">
+            <div>
+              <p class="section-label">Equipo GEOMATCH · Universidad EAN</p>
+              <p class="team">Yennifer López Días · Josué Alomia Bernal · Oscar Molina Munevar</p>
+            </div>
+            <p class="source-note">
+              Validación exploratoria del MVP con 5 participantes únicos. Los resultados orientan la iteración y no representan inferencia poblacional.
+            </p>
+          </footer>
+        </div>
+      </article>
+    </main>
+
+    <script src="poster-v2.js"></script>
+  </body>
+</html>

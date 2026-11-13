@@ -587,52 +587,61 @@ body {
 }
 
 .pilot {
-  padding: 2.3cqw 2.6cqw;
+  padding: 2cqw 2.25cqw;
   display: grid;
-  grid-template-columns: 1fr 18cqw;
-  gap: 2.5cqw;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.28fr) 15.2cqw;
+  gap: 1.65cqw;
   align-items: center;
   border-radius: 2cqw;
-  background: linear-gradient(105deg, #00ffb2, #00e5ff);
+  background: #00ffb2;
   color: #06100d;
 }
 
-.dark-label {
-  color: rgb(6 16 13 / 66%);
-}
-
 .pilot h2 {
-  font-size: 3.75cqw;
-  line-height: 0.95;
+  margin: 0;
+  font-size: 3.05cqw;
+  line-height: 0.98;
 }
 
-.pilot-copy > p:not(.section-label) {
+.pilot-copy > p {
   margin: 1.1cqw 0 0;
-  max-width: 62cqw;
-  font-size: 1.55cqw;
-  font-weight: 700;
+  font-size: 1.5cqw;
+  font-weight: 600;
   line-height: 1.38;
 }
 
-.goals {
-  margin-top: 1.4cqw;
+.pilot-criteria {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8cqw;
+  list-style: none;
 }
 
-.goals span {
-  padding: 0.9cqw;
+.pilot-criteria li {
+  display: grid;
+  grid-template-columns: 1.35cqw minmax(0, 1fr);
+  align-items: start;
+  gap: 0.55cqw;
+  padding: 0.9cqw 0.85cqw;
   border-radius: 0.9cqw;
-  background: rgb(6 16 13 / 10%);
-  font-size: 1.18cqw;
-  font-weight: 800;
-  text-transform: uppercase;
+  background: #0a1419;
+  color: #fff;
+  font-size: 1.38cqw;
+  font-weight: 700;
+  line-height: 1.23;
 }
 
-.goals b {
-  display: block;
-  font: 900 2.25cqw/1 "Chivo", sans-serif;
+.pilot-check {
+  display: grid;
+  place-items: center;
+  width: 1.35cqw;
+  aspect-ratio: 1;
+  border: 0.13cqw solid currentColor;
+  border-radius: 50%;
+  color: #00ffb2;
+  font: 800 0.9cqw/1 system-ui, sans-serif;
 }
 
 .qr-block {

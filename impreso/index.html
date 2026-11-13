@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="poster-v6.css" />
+    <link rel="stylesheet" href="poster-v6.css?v=2" />
     <title>GEOMATCH · Póster 100 × 200 cm · Prototipo 6</title>
   </head>
   <body>
@@ -195,17 +195,17 @@
             </ul>
           </section>
 
-          <section class="pilot">
+          <section class="pilot" aria-labelledby="pilot-title">
             <div class="pilot-copy">
-              <p class="section-label dark-label">Próximo experimento</p>
-              <h2>Piloto con una decisión activa</h2>
-              <p>Comparamos ubicaciones reales y medimos tiempo ahorrado, riesgos detectados y cambios en el orden de las alternativas.</p>
-              <div class="goals" aria-label="Metas del piloto">
-                <span><b>≥85%</b> precisión</span>
-                <span><b>100%</b> trazabilidad</span>
-                <span><b>≤1 día</b> entrega</span>
-              </div>
+              <h2 id="pilot-title">Piloto con una decisión activa</h2>
+              <p>Comparamos 2 a 5 ubicaciones con datos reales y medimos horas ahorradas, riesgos detectados y cambios en el orden de las alternativas.</p>
             </div>
+            <ul class="pilot-criteria" aria-label="Criterios de éxito del piloto">
+              <li><span class="pilot-check" aria-hidden="true">✓</span><span>8 de 10 usuarios completan el flujo sin ayuda crítica</span></li>
+              <li><span class="pilot-check" aria-hidden="true">✓</span><span>100% de indicadores muestran fuente, fecha y cobertura</span></li>
+              <li><span class="pilot-check" aria-hidden="true">✓</span><span>El piloto modifica o confirma una decisión con evidencia</span></li>
+              <li><span class="pilot-check" aria-hidden="true">✓</span><span>Margen real positivo por caso</span></li>
+            </ul>
             <figure class="qr-block">
               <img src="../qr_demo.png" alt="Código QR de la demo de GEOMATCH" />
               <figcaption><strong>Prueba la demo</strong><span>Escanea con tu celular</span></figcaption>

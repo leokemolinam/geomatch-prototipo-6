@@ -47,6 +47,13 @@ body {
   cursor: pointer;
 }
 
+.toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
 .button-ghost {
   color: #fff;
   background: rgb(255 255 255 / 3%);
@@ -780,6 +787,7 @@ body {
   .toolbar {
     padding: 10px 12px;
     flex-wrap: wrap;
+    gap: 8px;
   }
 
   .print-spec {
@@ -799,6 +807,16 @@ body {
 
   .poster {
     width: calc(100vw - 16px);
+  }
+}
+
+@media (max-width: 380px) {
+  .toolbar-actions {
+    gap: 5px;
+  }
+
+  .button {
+    padding-inline: 9px;
   }
 }
 
